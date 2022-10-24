@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9f924ee51c.js" crossorigin="anonymous"></script>
+    <title>CakeSpace</title>
+</head>
+<body>
+    <header class="cabecera">
+        <div class="container">
+            <a href="index.html" class="link-logo">
+                <img src="../Pasteleria - Launch X/Images/CakeSpacelogo.png" alt="Logo de CakeSpace" class="logo" width="500" height="500">
+            </a>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="make.html">Crea</a>
+                <a href="contact.html">Contacto</a>
+                <a href="login.html" target="_blank">Ingresa</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="banner">
+            <img src="../Pasteleria - Launch X/Images/bannerMake.jpg" alt="Cohete viajando al espacio exterior" class="banner-home" width="1920" height="1200">
+            <div class="container">
+                <div class="fila">
+                    <div class="columna-50">
+                        <h1>Crea tu pastel</h1>
+                    </div>
+                    <div class="columna-50">
+                        <p>Empieza tu viaje creando tu pastel espacial</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="make">
+            <div class="container">
+                <div class="fila">
+                    <div class="columna-50 sabores">
+                        <h2>Sabores</h2>
+                    </div>
+                    <div class="columna">
+                        <form action="data.php" id="pedido" method="post">
+                            <div class="form-bloques">
+                                <input id="nombre" class="form-input" type="text" placeholder="Nombre" name="nombre">
+                            </div>
+                            <div class="form-bloques">
+                                <input id="telefono" class="form-input" type="tel" placeholder="Teléfono" name="telefono" maxlength="10">
+                            </div>
+                            <div class="form-bloques">
+                                <input id="email" class="form-input" type="email" placeholder="Email" name="email">
+                            </div>
+                            <div class="form-bloques">
+                                <input id="descripcion" class="form-input" type="text" placeholder="Describe como quieres tu pastel" name="descripcion">
+                                <p>Agrega una imagen para apoyo visual</p>
+                                <input type="file" accept="image/*">
+                            </div>
+                            <div class="form-bloques">
+                                <div class="form-radio">
+                                    <h3>Escoge el sabor</h3>
+                                        <label for="pastelChocolate">Pastel de Chocolate</label>
+                                        <input type="radio" id="pastelChocolate" name="sabor" value="pastelChocolate">
+                                        <label for="vanilla">Pastel de Vainilla</label>
+                                        <input type="radio" id="vanilla" name="sabor" value="vanilla">
+                                        <label for="helado">Pastel de helado napolitano</label>
+                                        <input type="radio" id="helado" name="sabor" value="helado">
+                                </div>
+                                <div class="form-box">
+                                    <h3>Escoge los adornos</h3>
+                                        <div class="frutas">    
+                                            <label for="frutas">Frutas</label>
+                                            <input type="checkbox" name="frutas" id="frutas" value="frutas" class="form-box">
+                                        </div>
+                                        <div class="variantes-frutas">
+                                                <label for="fresas">Fresas</label>
+                                                <input type="checkbox" name="fresas" id="fresas" value="fresas">
+                                                <label for="zarzamora">Zarzamora</label>
+                                                <input type="checkbox" name="zarzamora" id="zarzamora" value="zarzamora">
+                                                <label for="moras">Moras</label>
+                                                <input type="checkbox" name="moras" id="moras" value="moras">
+                                                <label for="kiwi">Kiwi</label>
+                                                <input type="checkbox" name="kiwi" id="kiwi" value="kiwi">
+                                                <label for="mango">Mango</label>
+                                                <input type="checkbox" name="mango" id="mango" value="mango">
+                                                <label for="durazno">Durazno</label>
+                                                <input type="checkbox" name="durazno" id="durazno" value="durazno">
+                                                <label for="uvas">Uvas</label>
+                                                <input type="checkbox" name="uvas" id="uvas" value="uvas">
+                                        </div>
+                                        <div class="mantequilla">
+                                            <label for="mantequilla">Crema de mantequilla</label>
+                                            <input type="checkbox" name="mantequilla" id="mantequilla" value="mantequilla">
+                                        <div class="variante-mantequilla">
+                                                <label for="natural">Natural</label>
+                                                <input type="radio" name="variante-mantequilla" id="natural" value="natural">
+                                                <label for="chocolate">Chocolate</label>
+                                                <input type="radio" name="variante-mantequilla" id="chocolate" value="chocolate">
+                                                <label for="fresa">Fresa</label>
+                                                <input type="radio" name="variante-mantequilla" id="fresa" value="fresa">
+                                                <label for="cajeta">Cajeta</label>
+                                                <input type="radio" name="variante-mantequilla" id="cajeta" value="cajeta">
+                                                <label for="cafe">Café</label>
+                                                <input type="radio" name="variante-mantequilla" id="cafe" value="cafe">
+                                        </div>
+                                        <div class="fondant">
+                                            <label for="fondant">Fondant</label>
+                                            <input type="checkbox" name="fondant" id="fondant" value="fondant">
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="form-bloques form-bloque-boton">
+                                <input type="submit" value="ENVIAR" class="btn btn-enviar">
+                                <input type="reset" value="Eliminar" class="btn btn-reset">
+                            </div>
+                        </form>  
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="pie">
+            <div class="container">
+                <div class="fila">
+                    <div class="columna columna-33 empujar-33 empujar-mb-0 columna-mb-100 orden lista-redes">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="columna columna-33 columna-mb-100">
+                        &reg; Derechos reservados 2022
+                    </div>
+                    <div class="columna columna-33 columna-mb-100">
+                        <a href="#">Terminos y condiciones</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
