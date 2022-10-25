@@ -29,4 +29,4 @@ Solo es el trabajo en HTML, aún esta en desarrollo los trabajos de CSS
 * Las tablas se modificaran automaticamente relacionados con los pedidos
 * Una acción para poder enviar a la base da datos los ingresos al stock de los productos
 * La página solo se puede ingresar a ella con un usuario y contraseña de los pasteleros
-* El 
+* Agregar un columna de merma y una alerta cuando el producto este apunto de caducar y que se conserve una alerta visual, cuano el producto ya caduco
