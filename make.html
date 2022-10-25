@@ -38,11 +38,12 @@
         <section id="make">
             <div class="container">
                 <div class="fila">
-                    <div class="columna-50 sabores">
-                        <h2>Sabores</h2>
-                    </div>
                     <div class="columna">
                         <form action="data.php" id="pedido" method="post">
+                            <div class="columna-50 sabores">
+                                <h2>Reclutamiento</h2>
+                                <p>Necesitamos tus datos para unirte a los exploradores</p>
+                            </div>
                             <div class="form-bloques">
                                 <input id="nombre" class="form-input" type="text" placeholder="Nombre" name="nombre">
                             </div>
@@ -52,11 +53,10 @@
                             <div class="form-bloques">
                                 <input id="email" class="form-input" type="email" placeholder="Email" name="email">
                             </div>
-                            <div class="form-bloques">
-                                <input id="descripcion" class="form-input" type="text" placeholder="Describe como quieres tu pastel" name="descripcion">
-                                <p>Agrega una imagen para apoyo visual</p>
-                                <input type="file" accept="image/*">
-                            </div>
+                            <div class="columna-50 sabores">
+                                <h2>Nave espacial</h2>
+                                <p>Empieza a crear el pastel que te ayudara a llegar a la luna</p>
+                            </div>   
                             <div class="form-bloques">
                                 <div class="form-radio">
                                     <h3>Escoge el sabor</h3>
@@ -69,51 +69,57 @@
                                 </div>
                                 <div class="form-box">
                                     <h3>Escoge los adornos</h3>
-                                        <div class="frutas">    
-                                            <label for="frutas">Frutas</label>
-                                            <input type="checkbox" name="frutas" id="frutas" value="frutas" class="form-box">
-                                        </div>
-                                        <div class="variantes-frutas">
-                                                <label for="fresas">Fresas</label>
-                                                <input type="checkbox" name="fresas" id="fresas" value="fresas">
-                                                <label for="zarzamora">Zarzamora</label>
-                                                <input type="checkbox" name="zarzamora" id="zarzamora" value="zarzamora">
-                                                <label for="moras">Moras</label>
-                                                <input type="checkbox" name="moras" id="moras" value="moras">
-                                                <label for="kiwi">Kiwi</label>
-                                                <input type="checkbox" name="kiwi" id="kiwi" value="kiwi">
-                                                <label for="mango">Mango</label>
-                                                <input type="checkbox" name="mango" id="mango" value="mango">
-                                                <label for="durazno">Durazno</label>
-                                                <input type="checkbox" name="durazno" id="durazno" value="durazno">
-                                                <label for="uvas">Uvas</label>
-                                                <input type="checkbox" name="uvas" id="uvas" value="uvas">
-                                        </div>
-                                        <div class="mantequilla">
-                                            <label for="mantequilla">Crema de mantequilla</label>
-                                            <input type="checkbox" name="mantequilla" id="mantequilla" value="mantequilla">
+                                    <div class="frutas">    
+                                        <label for="frutas">Frutas</label>
+                                        <input type="checkbox" name="frutas" id="frutas" value="frutas" class="form-box">
+                                    </div>
+                                    <div class="variantes-frutas">
+                                            <label for="fresas">Fresas</label>
+                                            <input type="checkbox" name="fresas" id="fresas" value="fresas">
+                                            <label for="zarzamora">Zarzamora</label>
+                                            <input type="checkbox" name="zarzamora" id="zarzamora" value="zarzamora">
+                                            <label for="moras">Moras</label>
+                                            <input type="checkbox" name="moras" id="moras" value="moras">
+                                            <label for="kiwi">Kiwi</label>
+                                            <input type="checkbox" name="kiwi" id="kiwi" value="kiwi">
+                                            <label for="mango">Mango</label>
+                                            <input type="checkbox" name="mango" id="mango" value="mango">
+                                            <label for="durazno">Durazno</label>
+                                            <input type="checkbox" name="durazno" id="durazno" value="durazno">
+                                            <label for="uvas">Uvas</label>
+                                            <input type="checkbox" name="uvas" id="uvas" value="uvas">
+                                    </div>
+                                    <div class="mantequilla">
+                                        <label for="mantequilla">Crema de mantequilla</label>
+                                        <input type="checkbox" name="mantequilla" id="mantequilla" value="mantequilla">
                                         <div class="variante-mantequilla">
-                                                <label for="natural">Natural</label>
-                                                <input type="radio" name="variante-mantequilla" id="natural" value="natural">
-                                                <label for="chocolate">Chocolate</label>
-                                                <input type="radio" name="variante-mantequilla" id="chocolate" value="chocolate">
-                                                <label for="fresa">Fresa</label>
-                                                <input type="radio" name="variante-mantequilla" id="fresa" value="fresa">
-                                                <label for="cajeta">Cajeta</label>
-                                                <input type="radio" name="variante-mantequilla" id="cajeta" value="cajeta">
-                                                <label for="cafe">Café</label>
-                                                <input type="radio" name="variante-mantequilla" id="cafe" value="cafe">
+                                            <label for="natural">Natural</label>
+                                            <input type="radio" name="variante-mantequilla" id="natural" value="natural">
+                                            <label for="chocolate">Chocolate</label>
+                                            <input type="radio" name="variante-mantequilla" id="chocolate" value="chocolate">
+                                            <label for="fresa">Fresa</label>
+                                            <input type="radio" name="variante-mantequilla" id="fresa" value="fresa">
+                                            <label for="cajeta">Cajeta</label>
+                                            <input type="radio" name="variante-mantequilla" id="cajeta" value="cajeta">
+                                            <label for="cafe">Café</label>
+                                            <input type="radio" name="variante-mantequilla" id="cafe" value="cafe">
                                         </div>
-                                        <div class="fondant">
-                                            <label for="fondant">Fondant</label>
-                                            <input type="checkbox" name="fondant" id="fondant" value="fondant">
-                                        </div>
+                                    </div>
+                                    <div class="fondant">
+                                        <label for="fondant">Fondant</label>
+                                        <input type="checkbox" name="fondant" id="fondant" value="fondant">
+                                    </div>
+                                    <div class="form-bloques">
+                                        <input id="descripcion" class="form-input" type="text" placeholder="Describe como quieres tu pastel" name="descripcion">
+                                        <p>Agrega una imagen para apoyo visual</p>
+                                        <input type="file" accept="image/*">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-bloques form-bloque-boton">
-                                <input type="submit" value="ENVIAR" class="btn btn-enviar">
-                                <input type="reset" value="Eliminar" class="btn btn-reset">
-                            </div>
+                                <div class="form-bloques form-bloque-boton">
+                                    <input type="submit" value="ENVIAR" class="btn btn-enviar">
+                                    <input type="reset" value="Eliminar" class="btn btn-reset">
+                                </div>
                         </form>  
                     </div>
                 </div>
